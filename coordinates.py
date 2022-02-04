@@ -7,4 +7,7 @@ class Coordinate:
     def move(self, delta_x, delta_y):
         return Coordinate(self.x + delta_x, self.y + delta_y)
 
-    def distance(delta_x**2 + delta_y**2)
+    def distance(self, other_coordenadas):
+        delta_x = self.x - other_coordenadas
+        delta_y = self.y - other_coordenadas
+        return(delta_x**2 + delta_y**2)

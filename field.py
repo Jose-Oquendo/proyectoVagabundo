@@ -3,8 +3,8 @@ class Field:
     def __init__(self):
         self.homeless_coordinates = {}
 
-    def add_homeless(self, homeless, coordinates):
-        self.Homeless_coordinates[homeless] = coordinates
+    def add_homeless(self, homeless, coordinate):
+        self.homeless_coordinates[homeless] = coordinate
 
     def move_homeless(self, homeless):
         delta_x, delta_y = homeless.walk()

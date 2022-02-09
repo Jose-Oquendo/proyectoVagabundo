@@ -12,5 +12,3 @@ class StandarHomeless(Homeless):
 
     def walk(self):
         return random.choice([(1,0),(-1,0),(0,1),(0,-1)])
-
-

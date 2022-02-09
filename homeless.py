@@ -2,7 +2,7 @@ import random
 
 class Homeless:
 
-    def __init__(self, name):
+    def __init__(self, name, x=0, y=0):
         self.name = name
 
 class StandarHomeless(Homeless):

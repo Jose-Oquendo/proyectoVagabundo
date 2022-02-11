@@ -10,4 +10,4 @@ class Coordinate:
     def distance(self, other_coordenadas):
         delta_x = self.x - other_coordenadas.x
         delta_y = self.y - other_coordenadas.y
-        return(delta_x**2 + delta_y**2)
+        return(delta_x**2 + delta_y**2)**0.5

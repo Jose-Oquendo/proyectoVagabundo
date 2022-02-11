@@ -10,7 +10,7 @@ class Homeless:
     def posicion (self):
         return (self.x,self.y)
 
-    def distance(self,other_coordinate):
+    def distance(self):
         return (self.x**2 + self.y**2)**0.5
 
 class StandarHomeless(Homeless):
@@ -30,13 +30,21 @@ class ModerateHomeless(Homeless):
         super().__init__(name)
 
     def walk(self):
+        dx,dy= random.choice([(1,0),(-1,0),(0,1),(0,-1)])
+        self.x +=dx
+        self.y +=dy
+        return [self.x,self.y]
+
+    def __init__(self, name):
+        super().__init__(name)
+
+    def walk(self):
         dx,dy = random.choice([(0,2),(0,-2),(2,0),(-2,0)])
         self.x +=dx
         self.y +=dy
         return [self.x,self.y]
 
-class leftHomeless(Homeless):
-
+class LeftHomeless(Homeless):
     def __init__(self, name):
         super().__init__(name)
 

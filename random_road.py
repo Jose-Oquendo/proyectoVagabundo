@@ -43,11 +43,11 @@ def graph(x_graph,y_graph,know,steps):
     paint.line(x_graph,y_graph,legend_label = str(steps) + "Pasos")
     final_x = x_graph[-1]
     final_y = y_graph[-1]
-    paint.diamond_cross(0,0,fill_color = "blue", line_color = "blue", size = 18)
-    paint.diamond_cross(final_x,final_y,fill_color = "red",line_color = "red", size = 18)
+    paint.diamond_cross(0,0,fill_color = "red", line_color = "red", size = 18)
+    paint.diamond_cross(final_x,final_y,fill_color = "green",line_color = "green", size = 18)
     final_stretch_x = [0,final_x]
     final_stretch_y = [0,final_y]
-    paint.line(final_stretch_x,final_stretch_y,line_width = 2,color = "red")
+    paint.line(final_stretch_x,final_stretch_y,line_width = 2,color = "purple")
     show(paint)
 
 def main(walk_distance, number_of_attemps, type_homeless):
@@ -64,7 +64,7 @@ def main(walk_distance, number_of_attemps, type_homeless):
 
 if __name__ == '__main__':
     walk_distance = [100]
-    number_of_attemps = 2
+    number_of_attemps = 1
     main(walk_distance,number_of_attemps,StandarHomeless)
     main(walk_distance,number_of_attemps,ModerateHomeless)
     main(walk_distance,number_of_attemps,LeftHomeless)

@@ -1,4 +1,4 @@
-from homeless import Homeless, StandarHomeless, ModerateHomeless, LeftHomeless
+from homeless import Homeless, StandarHomeless, ModerateHomeless, LeftHomeless, RightHomeless
 from field import Field
 from coordinates import Coordinate
 from field import Field
@@ -68,3 +68,4 @@ if __name__ == '__main__':
     main(walk_distance,number_of_attemps,StandarHomeless)
     main(walk_distance,number_of_attemps,ModerateHomeless)
     main(walk_distance,number_of_attemps,LeftHomeless)
+    main(walk_distance,number_of_attemps,RightHomeless)

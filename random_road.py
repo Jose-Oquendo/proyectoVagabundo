@@ -10,9 +10,10 @@ def know_type_homeless(type_homeless):
         return "Vagabundo Estandar"
     elif type_homeless.__name__ == "ModerateHomeless":
         return "Vagabundo Moderado"
-
-    else:
+    elif type_homeless.__name__ == "LeftHomeless":
         return "Vagabundo Izquierdista"
+    else:
+        return "Vagabundo Derechista"
 
 def walking(homeless,steps,type_homeless):
     x_graph = [0]

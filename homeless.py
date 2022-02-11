@@ -7,7 +7,7 @@ class Homeless:
         self.x = x
         self.y = y
 
-    def posicion (self):
+    def position (self):
         return (self.x,self.y)
 
     def distance(self):
